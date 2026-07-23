@@ -63,17 +63,6 @@ engineering.
 
 </div>
 
-### 📊 GitHub in numbers
-
-<div align="center">
-  <img src="https://img.shields.io/github/followers/kiko-yan?style=for-the-badge&logo=github&label=Followers&color=5B8CFF&labelColor=0A0F1E" alt="Followers" />
-  <img src="https://img.shields.io/github/last-commit/kiko-yan/kiko-yan?style=for-the-badge&label=Last%20commit&color=34D6E0&labelColor=0A0F1E" alt="Last commit" />
-  <br/><br/>
-  <img src="https://streak-stats.demolab.com/?user=kiko-yan&hide_border=true&background=0A0F1E&stroke=1F2A44&ring=5B8CFF&fire=34D6E0&currStreakNum=EEF2FB&sideNums=EEF2FB&currStreakLabel=34D6E0&sideLabels=AAB4CF&dates=6D7796" alt="GitHub streak" />
-  <br/><br/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kiko-yan&bg_color=0A0F1E&color=EEF2FB&line=5B8CFF&point=34D6E0&area=true&area_color=1A2A5E&hide_border=true&title_color=5B8CFF" alt="Contribution activity graph" />
-</div>
-
 ### 🤝 Open to
 
 Full-time roles in **AI Agent / LLM applications**, **solutions / forward-deployed
