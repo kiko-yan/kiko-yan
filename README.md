@@ -1,65 +1,41 @@
-# Kiki · 严钟毓 — Personal Homepage 🐰
+# Kiki · 严钟毓 — Personal Homepage
 
-A cute-but-academic, bilingual (EN / 中文) single-page personal site for **Kiki (严钟毓)**,
-AI Agent / LLM Application Engineer. Liquid-glass aesthetic with a pastel sky hero,
-inspired by the [PanoWorld](https://lihaoy-ux.github.io/panoworld-page/) landing page.
+A bilingual (English / 中文) single-page personal website for Kiki (严钟毓),
+an AI Agent and LLM application engineer. The page presents a professional
+profile based on the résumé, covering education, experience, selected
+projects, skills, and contact details.
 
-## ✨ Features
-- **Bilingual toggle** (EN / 中) in the top-right — remembers your choice via `localStorage`.
-- **Animated hero**: floating particle/ripple canvas, drifting gradient blobs, an orbiting avatar.
-- **Liquid-glass** cards, buttons and nav pill with cursor glow.
-- **Scroll-reveal** animations, sticky active-section nav, responsive + reduced-motion friendly.
-- Content pulled straight from the résumé: NUS · UCL · MSRA (AI Interview Platform +
-  Knowledge Fabric) · FinGeneral Agent · skills.
-- **Zero build step** — pure HTML/CSS/JS. Just static files.
+**Live site:** https://kiko-yan.github.io/kiko-yan/
 
-## 📁 Files
-```
-kiki-homepage/
-├── index.html   # all content (bilingual via data-en / data-zh attributes)
-├── style.css    # styling / animations
-├── script.js    # language toggle, canvas, scroll reveal, nav
-├── .nojekyll     # tells GitHub Pages to serve files as-is
-└── README.md
-```
+## Overview
 
-## 🚀 Deploy to GitHub Pages
+- **Bilingual.** Visitors can switch between English and Chinese, and the
+  preferred language is remembered on return visits.
+- **Single page.** Education, experience, projects, skills, and contact
+  information are presented in one continuous layout.
+- **Responsive.** The design adapts to desktop and mobile screens.
+- **Self-contained.** The site consists of static files only, with no build
+  step or installation required.
 
-### Option A — user/organization site (recommended, gives you `username.github.io`)
-1. Create a repo named exactly `your-username.github.io`.
-2. Copy the **contents** of this `kiki-homepage/` folder into the repo root.
-3. Commit & push:
-   ```bash
-   git init
-   git add .
-   git commit -m "Kiki personal homepage"
-   git branch -M main
-   git remote add origin https://github.com/your-username/your-username.github.io.git
-   git push -u origin main
-   ```
-4. Visit `https://your-username.github.io` (may take a minute to go live).
+## Deployment
 
-### Option B — project site (any repo name)
-1. Push these files to any repo (e.g. `homepage`).
-2. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
-3. Choose branch `main` and folder `/ (root)` → Save.
-4. Visit `https://your-username.github.io/homepage/`.
+The site is published with GitHub Pages from the `main` branch of the
+`kiko-yan/kiko-yan` repository and is available at the live link above.
 
-## ✏️ Things to personalize before publishing
-Search `index.html` for `TODO` and fill in:
-- **GitHub URL** — currently `https://github.com/` in the Contact section (and nav).
-- **LinkedIn URL** — currently `https://www.linkedin.com/`.
-- Email is set to `e1351368@nus.edu`. Phone number is intentionally **not** shown for privacy.
+To publish an update, commit the changes and push to the `main` branch.
+GitHub Pages redeploys automatically, typically within a few minutes.
 
-Optional tweaks:
-- Change the mascot emoji 🐰 (favicon + nav + avatar) in `index.html`.
-- Adjust the palette via the CSS custom properties at the top of `style.css`
-  (`--accent`, `--accent-2`, `--lilac`, `--pink`, `--mint` …).
-- Add real numbers where the résumé had placeholders (e.g. number of interviews handled).
+## Local preview
 
-## 🔍 Preview locally
+To review the site before publishing, open `index.html` in a browser, or
+serve the folder locally and visit http://localhost:8080:
+
 ```bash
-cd kiki-homepage
 python3 -m http.server 8080
-# open http://localhost:8080
 ```
+
+## Customization
+
+- **Content** is contained in `index.html`; visual styling is in `style.css`.
+- **Contact links.** The LinkedIn link in the Contact section is currently a
+  placeholder and should be updated before sharing the site widely.
