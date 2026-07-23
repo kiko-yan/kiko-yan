@@ -1,4 +1,4 @@
-# Zhongyu Yan (Kiki · 严钟毓)
+# ![👋Hi, I'm Zhongyu Yan (Kiki · 严钟毓)](https://kiko-yan.github.io/kiko-yan/)
 
 AI Agent and LLM application engineer. I enjoy turning early ideas into
 working, trustworthy agent products — building the systems, retrieval, and
@@ -18,7 +18,7 @@ bridge business judgment and hands-on engineering.
 
 ## Background
 
-- **MSc, Data Science & Sustainability** — National University of Singapore
+- **MSc, Data Science for Sustainability** — National University of Singapore
 - **BSc, Economics** — University College London
 - **AI Agent Application Development Intern** — Microsoft Research Asia
 
