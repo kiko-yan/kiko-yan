@@ -1,41 +1,31 @@
-# Kiki · 严钟毓 — Personal Homepage
+# Zhongyu Yan (Kiki · 严钟毓)
 
-A bilingual (English / 中文) single-page personal website for Kiki (严钟毓),
-an AI Agent and LLM application engineer. The page presents a professional
-profile based on the résumé, covering education, experience, selected
-projects, skills, and contact details.
+AI Agent and LLM application engineer. I enjoy turning early ideas into
+working, trustworthy agent products — building the systems, retrieval, and
+evaluation that let them ship with confidence.
 
-**Live site:** https://kiko-yan.github.io/kiko-yan/
+Most recently I worked at Microsoft Research Asia, where I built an
+end-to-end AI interview platform and a research knowledge-graph assistant.
+I hold a master's in Data Science from the National University of Singapore
+and a degree in Economics from University College London, which lets me
+bridge business judgment and hands-on engineering.
 
-## Overview
+## Focus areas
 
-- **Bilingual.** Visitors can switch between English and Chinese, and the
-  preferred language is remembered on return visits.
-- **Single page.** Education, experience, projects, skills, and contact
-  information are presented in one continuous layout.
-- **Responsive.** The design adapts to desktop and mobile screens.
-- **Self-contained.** The site consists of static files only, with no build
-  step or installation required.
+- Agent design and orchestration
+- Retrieval-augmented generation and knowledge systems
+- LLM application evaluation and quality assurance
 
-## Deployment
+## Background
 
-The site is published with GitHub Pages from the `main` branch of the
-`kiko-yan/kiko-yan` repository and is available at the live link above.
+- **MSc, Data Science & Sustainability** — National University of Singapore
+- **BSc, Economics** — University College London
+- **AI Agent Application Development Intern** — Microsoft Research Asia
 
-To publish an update, commit the changes and push to the `main` branch.
-GitHub Pages redeploys automatically, typically within a few minutes.
+## Get in touch
 
-## Local preview
+- **Website:** https://kiko-yan.github.io/kiko-yan/
+- **Email:** e1351368@nus.edu
 
-To review the site before publishing, open `index.html` in a browser, or
-serve the folder locally and visit http://localhost:8080:
-
-```bash
-python3 -m http.server 8080
-```
-
-## Customization
-
-- **Content** is contained in `index.html`; visual styling is in `style.css`.
-- **Contact links.** The LinkedIn link in the Contact section is currently a
-  placeholder and should be updated before sharing the site widely.
+Currently open to full-time opportunities in AI Agent and LLM applications,
+solutions / forward-deployed engineering, and AI evaluation.
