@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiki (严钟毓) · AI Agent Engineer</title>
+  <meta name="description" content="Kiki (严钟毓) — AI Agent / LLM Application Engineer. NUS Data Science · UCL Economics · MSRA Research Intern. Building agentic systems, RAG & LLM-as-Judge evaluation.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐰</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Playfair+Display:ital,wght@0,500..900;1,500..800&family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/766b4d68b2.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== NAV BAR ==================== -->
+  <nav id="navbar">
+    <div class="nav-float">
+      <a href="#hero" class="nav-logo-circle" aria-label="Home">
+        <span class="nav-logo-emoji">🐰</span>
+      </a>
+      <div class="nav-pill" id="nav-pill">
+        <div class="nav-pill-glow" id="nav-pill-glow"></div>
+        <div class="nav-links">
+          <a href="#about" data-en="About" data-zh="关于">About</a>
+          <a href="#education" data-en="Education" data-zh="教育">Education</a>
+          <a href="#experience" data-en="Experience" data-zh="经历">Experience</a>
+          <a href="#projects" data-en="Projects" data-zh="项目">Projects</a>
+          <a href="#skills" data-en="Skills" data-zh="技能">Skills</a>
+          <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+        </div>
+        <button id="mobile-menu-toggle" aria-label="Menu"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+        <span class="lang-en">EN</span><span class="lang-sep">/</span><span class="lang-zh">中</span>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="#about" data-en="About" data-zh="关于">About</a>
+      <a href="#education" data-en="Education" data-zh="教育">Education</a>
+      <a href="#experience" data-en="Experience" data-zh="经历">Experience</a>
+      <a href="#projects" data-en="Projects" data-zh="项目">Projects</a>
+      <a href="#skills" data-en="Skills" data-zh="技能">Skills</a>
+      <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section id="hero">
+    <canvas id="ripple-canvas"></canvas>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-content">
+      <div class="hero-left" id="hero-left">
+        <span class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          <span data-en="Open to full-time · AI Agent / LLM Apps" data-zh="全职求职中 · AI Agent / 大模型应用">Open to full-time · AI Agent / LLM Apps</span>
+        </span>
+        <h1 class="hero-title">
+          <span class="hero-title-main">Kiki</span>
+          <span class="hero-title-cn">严钟毓</span>
+        </h1>
+        <p class="hero-tagline"
+           data-en="AI Agent &amp; LLM Application Engineer — I design agentic systems, retrieval &amp; evaluation that actually ship. ✨"
+           data-zh="AI Agent 与大模型应用工程师 —— 我搭建能真正落地的智能体系统、检索与评测。✨">
+          AI Agent &amp; LLM Application Engineer — I design agentic systems, retrieval &amp; evaluation that actually ship. ✨
+        </p>
+        <p class="hero-sub"
+           data-en="NUS Data Science · UCL Economics · Microsoft Research Asia (MSRA)"
+           data-zh="新加坡国立大学 数据科学 · 伦敦大学学院 经济学 · 微软亚洲研究院 MSRA">
+          NUS Data Science · UCL Economics · Microsoft Research Asia (MSRA)
+        </p>
+        <div class="hero-buttons">
+          <a href="#experience" class="glass-btn hero-btn hero-btn-primary">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span data-en="Explore my work" data-zh="看看我的作品">Explore my work</span>
+          </a>
+          <a href="mailto:e1351368@nus.edu" class="glass-btn hero-btn">
+            <i class="fa-solid fa-envelope"></i>
+            <span data-en="Get in touch" data-zh="联系我">Get in touch</span>
+          </a>
+          <a href="#contact" class="glass-btn hero-btn">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-right" id="hero-right">
+        <div class="avatar-orbit">
+          <div class="orbit-ring orbit-ring-1"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+          <span class="orbit-chip orbit-chip-1"><i class="fa-solid fa-robot"></i> Agent</span>
+          <span class="orbit-chip orbit-chip-2"><i class="fa-solid fa-diagram-project"></i> RAG</span>
+          <span class="orbit-chip orbit-chip-3"><i class="fa-solid fa-gavel"></i> Eval</span>
+          <span class="orbit-chip orbit-chip-4"><i class="fa-solid fa-microphone-lines"></i> Voice</span>
+          <div class="avatar-core">
+            <span class="avatar-emoji">🐰</span>
+            <span class="avatar-sparkle avatar-sparkle-1">✦</span>
+            <span class="avatar-sparkle avatar-sparkle-2">✧</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" id="scroll-hint">
+      <span data-en="Scroll to explore" data-zh="向下滚动">Scroll to explore</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ==================== ABOUT ==================== -->
+  <section id="about" class="section">
+    <div class="section-container">
+      <div class="reveal">
+        <span class="section-kicker" data-en="Hello there" data-zh="你好呀">Hello there</span>
+        <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
+      </div>
+      <div class="about-layout">
+        <div class="about-text reveal">
+          <p data-en="I'm Kiki — an AI Agent &amp; LLM application engineer who loves turning fuzzy ideas into working, trustworthy agent products. At Microsoft Research Asia I built an end-to-end AI interview platform and a research knowledge-graph assistant, from real-time voice agents to LLM-as-Judge evaluation pipelines."
+             data-zh="我是 Kiki —— 一名 AI Agent 与大模型应用工程师，喜欢把模糊的想法变成能跑、可信赖的智能体产品。在微软亚洲研究院，我从零搭建了完整的 AI 面试平台与研究知识图谱助手，覆盖实时语音 Agent 到 LLM-as-Judge 评测流水线。">
+            I'm Kiki — an AI Agent &amp; LLM application engineer who loves turning fuzzy ideas into working, trustworthy agent products. At Microsoft Research Asia I built an end-to-end AI interview platform and a research knowledge-graph assistant, from real-time voice agents to LLM-as-Judge evaluation pipelines.
+          </p>
+          <p data-en="My sweet spot: agent orchestration (ReAct · Planner · MCP), hierarchical &amp; traceable RAG, and rigorous evaluation. With an Economics background from UCL and Data Science from NUS, I bridge business judgment and hands-on building. 🌱"
+             data-zh="我的甜蜜区：智能体编排（ReAct · Planner · MCP）、分层可溯源 RAG，以及严谨的评测体系。凭借 UCL 经济学 + NUS 数据科学的复合背景，我能在商业判断与动手实现之间自如切换。🌱">
+            My sweet spot: agent orchestration (ReAct · Planner · MCP), hierarchical &amp; traceable RAG, and rigorous evaluation. With an Economics background from UCL and Data Science from NUS, I bridge business judgment and hands-on building. 🌱
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EDUCATION ==================== -->
+  <section id="education" class="section section-alt">
+    <div class="section-container">
+      <div class="reveal">
+        <span class="section-kicker" data-en="Where I studied" data-zh="求学足迹">Where I studied</span>
+        <h2 class="section-title" data-en="Education" data-zh="教育背景">Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card glass-card reveal">
+          <div class="edu-emoji">🇸🇬</div>
+          <div class="edu-body">
+            <span class="edu-date">2024/07 – 2026/07</span>
+            <h3 data-en="National University of Singapore (NUS)" data-zh="新加坡国立大学 (NUS)">National University of Singapore (NUS)</h3>
+            <p class="edu-degree" data-en="MSc · Data Science &amp; Sustainability" data-zh="硕士 · 数据科学与可持续发展">MSc · Data Science &amp; Sustainability</p>
+          </div>
+        </div>
+        <div class="edu-card glass-card reveal">
+          <div class="edu-emoji">🇬🇧</div>
+          <div class="edu-body">
+            <span class="edu-date">2020/09 – 2023/06</span>
+            <h3 data-en="University College London (UCL)" data-zh="伦敦大学学院 (UCL)">University College London (UCL)</h3>
+            <p class="edu-degree" data-en="BSc · Economics" data-zh="本科 · 经济学">BSc · Economics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== EXPERIENCE ==================== -->
+  <section id="experience" class="section">
+    <div class="section-container">
+      <div class="reveal">
+        <span class="section-kicker" data-en="What I built" data-zh="我做过什么">What I built</span>
+        <h2 class="section-title" data-en="Experience" data-zh="实习经历">Experience</h2>
+      </div>
+
+      <div class="exp-header glass-card reveal">
+        <div class="exp-logo">🔬</div>
+        <div class="exp-head-body">
+          <h3 data-en="Microsoft Research Asia (MSRA)" data-zh="微软亚洲研究院 (MSRA)">Microsoft Research Asia (MSRA)</h3>
+          <p class="exp-role" data-en="AI Agent Application Development Intern" data-zh="AI Agent 应用开发实习生">AI Agent Application Development Intern</p>
+        </div>
+        <span class="exp-date">2025/12 – 2026/07</span>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="project-block glass-card reveal">
+        <div class="project-top">
+          <h4>
+            <span class="proj-icon">🎙️</span>
+            <span data-en="AI Interview Platform — AI Interviewer &amp; Automated Evaluation" data-zh="AI 智能面试平台 —— AI 面试官与自动化评测">AI Interview Platform — AI Interviewer &amp; Automated Evaluation</span>
+          </h4>
+        </div>
+        <p class="project-desc"
+           data-en="An end-to-end agent loop for Microsoft research-intern hiring: from auto question generation and multimodal real-time voice interviews to automated quality review."
+           data-zh="面向微软科研实习生招聘，构建从自动发题、多模态实时语音面试到自动化质量复盘的完整 Agent 闭环系统。">
+          An end-to-end agent loop for Microsoft research-intern hiring: from auto question generation and multimodal real-time voice interviews to automated quality review.
+        </p>
+        <ul class="project-points">
+          <li>
+            <strong data-en="Agent workflow &amp; architecture" data-zh="工作流与智能架构">Agent workflow &amp; architecture</strong>
+            <span data-en="Used an agent-workflow mindset to manage the full hiring lifecycle: LLMs parse the interviewer's JD to one-click generate structured JDs and staged interview templates (warm-up / technical / research / motivation), plus personalized question banks from auto-extracted résumés."
+                  data-zh="采用 Agent 工作流思想统一管理招聘生命周期：用大模型分析面试官岗位描述，一键生成结构化 JD 与分阶段面试模板（预热/技术/科研/动机），并结合自动抽取的候选人简历动态生成个性化题库。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="Full-duplex voice interview engine" data-zh="双工语音面试引擎">Full-duplex voice interview engine</strong>
+            <span data-en="Built a real-time full-duplex voice engine on Google Gemini Live with a core Planner scheduler — dynamically pacing follow-ups via time-budget &amp; coverage, a Skeptic verification layer and must-ask gates, live interviewer monitoring, and 'off-topic answer' detection ensuring 100% coverage of key questions."
+                  data-zh="基于 Google Gemini Live 实现底层实时双工语音面试引擎与核心 Planner 调度器：通过时间预算与题目覆盖率动态控制追问节奏；引入 Skeptic 核查逻辑与必问闸门、面试官后台实时监看，并智能识别“答非所问”，确保关键问题 100% 覆盖。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="LLM-as-Judge quality system" data-zh="LLM-as-Judge 质量体系">LLM-as-Judge quality system</strong>
+            <span data-en="Shipped a three-layer automated evaluation pipeline (per-turn / per-stage / whole interview) scoring specificity, non-leading questioning and profile-hallucination rate, with automated red-flag rules to intercept low-coverage or high-hallucination interviews."
+                  data-zh="独立打通并上线三层自动化评估流水线（逐轮/阶段/整场），从具体性、非诱导性、画像幻觉率等多维度打分，并制定自动化红旗规则，拦截覆盖不足或幻觉偏高的异常面试。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="Engineering &amp; delivery" data-zh="工程优化与落地">Engineering &amp; delivery</strong>
+            <span data-en="Tackled blocking from high-concurrency evaluation with batched short-transaction writes, layered report caching in SQLite, and A/B version comparison with sub-second report rendering."
+                  data-zh="针对高并发评估阻塞，采用批量短事务写库策略，将评估报告分层缓存至 SQLite，实现 A/B 版本比对与报告的秒级渲染。">
+            </span>
+          </li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Gemini Live</span><span class="tag">Planner</span><span class="tag">Full-duplex Voice</span><span class="tag">LLM-as-Judge</span><span class="tag">SQLite</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-block glass-card reveal">
+        <div class="project-top">
+          <h4>
+            <span class="proj-icon">🕸️</span>
+            <span data-en="MSRA Knowledge Fabric — Research Knowledge-Graph Assistant" data-zh="MSRA Knowledge Fabric —— 研究知识图谱智能助手">MSRA Knowledge Fabric — Research Knowledge-Graph Assistant</span>
+          </h4>
+        </div>
+        <p class="project-desc"
+           data-en="A Karpathy-Wiki-style assistant fusing knowledge graph, hierarchical RAG and agents for high-precision, fully-traceable answers over tens of millions of internal documents."
+           data-zh="基于 Karpathy Wiki 范式，研发融合知识图谱、分层 RAG 与 Agent 的智能助手，实现内部千万级文档的高精溯源直答。">
+          A Karpathy-Wiki-style assistant fusing knowledge graph, hierarchical RAG and agents for high-precision, fully-traceable answers over tens of millions of internal documents.
+        </p>
+        <ul class="project-points">
+          <li>
+            <strong data-en="Knowledge graph &amp; base construction" data-zh="知识图谱与知识库构建">Knowledge graph &amp; base construction</strong>
+            <span data-en="Led an auto-extraction pipeline over PPT/DOCX materials; a novel paired-extraction strategy fused structure + semantics, lifting entity capture by 30%+. Final graph: 1700+ entity nodes, 4800+ relation edges, 17 research communities, with a Linter erasing 200+ data hallucinations at the source."
+                  data-zh="主导会议 PPT 与 DOCX 材料的自动化抽取管线，首创配对抽取策略融合结构信息与语义细节，使实体捕获率提升 30%+。最终落库 1700+ 实体节点、4800+ 关系边与 17 个规范研究社区，并构建 Linter 从源头抹平 200+ 项数据幻觉。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="MCP &amp; ReAct orchestration" data-zh="MCP 与 ReAct 编排">MCP &amp; ReAct orchestration</strong>
+            <span data-en="Built an MCP server integrating 14 graph &amp; retrieval tools via Function Calling. The agent runs a ReAct loop — intent recognition, tool calls, observation, iterative reasoning — chaining up to 100 tool steps per task for complex relational queries."
+                  data-zh="基于 Model Context Protocol 搭建服务端，通过 Function Calling 统一集成 14 个图谱与检索工具。Agent 以 ReAct 模式自主完成意图识别、工具调用、结果观察到迭代推理的闭环，单任务支持最多 100 步工具串联。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="Hierarchical traceable RAG" data-zh="分层可溯源 RAG">Hierarchical traceable RAG</strong>
+            <span data-en="Designed a three-granularity retrieval protocol (overview → entity → source) with parent-child chunking, plus graph multi-hop path tracing to generate answers with node &amp; source citations that are traceable line-by-line."
+                  data-zh="设计由概览、实体到原文的三级粒度检索协议，采用父子文档切块并结合图谱多跳路径追踪，生成带节点与来源引用、可逐条溯源的答案，有效抑制幻觉。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="Memory &amp; decentralized skills" data-zh="记忆与去中心化 Skill">Memory &amp; decentralized skills</strong>
+            <span data-en="Built a session-memory module for multi-turn coreference resolution, and packaged the knowledge base as versioned Skills distributed via an internal SkillHub to each researcher's private local agent, with a web graph-visualization panel."
+                  data-zh="构建会话记忆模块实现指代消解与连贯追问；将知识库封装为可版本化 Skill，通过研究院内部 SkillHub 分发至每位研究员的本地私有 Agent，并提供 Web 图谱可视化面板。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="Full-dimension evaluation" data-zh="全维评测与性能">Full-dimension evaluation</strong>
+            <span data-en="Built a Customer-Zero eval set of 15 complex research challenges monitoring agent trajectories: Release Gate 15/15 passed, 100% traceable answers, ~96% single-task tool-call success, end-to-end latency under 3 seconds."
+                  data-zh="搭建含 15 类复杂研究难题的端到端评测集（Customer Zero），聚焦监控 Agent 执行轨迹：Release Gate 考核 15/15 全通，答案 100% 可追溯，单任务工具调用成功率逼近 96%，端到端响应缩短至 3 秒内。">
+            </span>
+          </li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Knowledge Graph</span><span class="tag">MCP</span><span class="tag">ReAct</span><span class="tag">GraphRAG</span><span class="tag">Traceable RAG</span><span class="tag">Function Calling</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROJECTS ==================== -->
+  <section id="projects" class="section section-alt">
+    <div class="section-container">
+      <div class="reveal">
+        <span class="section-kicker" data-en="Side quests" data-zh="独立项目">Side quests</span>
+        <h2 class="section-title" data-en="Projects" data-zh="项目经历">Projects</h2>
+      </div>
+
+      <div class="project-block glass-card reveal">
+        <div class="project-top">
+          <h4>
+            <span class="proj-icon">💹</span>
+            <span data-en="FinGeneral Agent — General-Purpose Autonomous Financial Agent" data-zh="FinGeneral Agent —— 通用金融自主智能体">FinGeneral Agent — General-Purpose Autonomous Financial Agent</span>
+          </h4>
+          <a href="https://test-fingeneral-agent-zyy.azurewebsites.net" target="_blank" rel="noopener" class="glass-btn small-btn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <span data-en="Live demo" data-zh="在线体验">Live demo</span>
+          </a>
+        </div>
+        <ul class="project-points">
+          <li>
+            <strong data-en="Agent orchestration &amp; safety" data-zh="Agent 编排与安全">Agent orchestration &amp; safety</strong>
+            <span data-en="Built a Plan-Execute-Reflect + Reflexion loop on LangGraph; multi-agent &amp; evidence-conflict graphs handle DAG decomposition, cross-argumentation and reflective re-evidencing. 40 financial tools audited through a unified security gateway."
+                  data-zh="基于 LangGraph 构建 Plan-Execute-Reflect + Reflexion 闭环，以多 Agent 与证据冲突图谱完成 DAG 拆解、交叉论证和反思补证；40 个金融工具统一经安全网关审计。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="Retrieval &amp; fine-tuning" data-zh="检索与微调">Retrieval &amp; fine-tuning</strong>
+            <span data-en="Built a three-channel hybrid RAG (vector, financial-report Text-to-SQL, time-series quotes); QLoRA fine-tuned Qwen2.5-32B (10k instructions) on a single A100, with financial NLI &amp; numeric cross-checks to suppress hallucination."
+                  data-zh="搭建向量、财报 Text-to-SQL、时序行情三通道混合 RAG；在单张 A100 上完成 Qwen2.5-32B QLoRA（10k 指令样本），结合金融 NLI 与数值交叉核验抑制幻觉。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="Quantified trustworthiness" data-zh="量化可信性">Quantified trustworthiness</strong>
+            <span data-en="Strict point-in-time / look-ahead-free rolling OOS evaluation, combined with online conformal risk (ACI) and distributionally-robust optimization (DRO/CVaR) to honestly downgrade invalid or over-conservative strategies."
+                  data-zh="构建严格 point-in-time / 无前视的滚动 OOS 评测，结合在线共形风险（ACI）与分布鲁棒优化（DRO/CVaR），对无效策略和过度保守结果如实降级。">
+            </span>
+          </li>
+          <li>
+            <strong data-en="Engineering delivery" data-zh="工程交付">Engineering delivery</strong>
+            <span data-en="Deployed the conversational workbench + real-time agent to a fixed Azure site using managed identity for model access; 2759 pytest cases covering math, time-series, APIs, security and UI contracts."
+                  data-zh="将对话工作台与实时 Agent 同源部署至 Azure 固定站，采用托管身份访问模型服务；全库 2759 项 pytest 覆盖数学、时序、API、安全与 UI 契约。">
+            </span>
+          </li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">LangGraph</span><span class="tag">Reflexion</span><span class="tag">Hybrid RAG</span><span class="tag">QLoRA</span><span class="tag">Text-to-SQL</span><span class="tag">Azure</span><span class="tag">Pytest</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SKILLS ==================== -->
+  <section id="skills" class="section">
+    <div class="section-container">
+      <div class="reveal">
+        <span class="section-kicker" data-en="My toolbox" data-zh="我的工具箱">My toolbox</span>
+        <h2 class="section-title" data-en="Skills" data-zh="专业技能">Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">🤖</div>
+          <h3 data-en="Agent Architecture &amp; Toolchain" data-zh="Agent 架构与工具链">Agent Architecture &amp; Toolchain</h3>
+          <p data-en="ReAct workflows, Planner scheduling &amp; Function Calling; LangChain &amp; LangGraph for multi-step reasoning; MCP ecosystem — end-to-end tool-server &amp; agent-engine orchestration."
+             data-zh="ReAct 工作流、Planner 调度与 Function Calling；用 LangChain / LangGraph 构建多步推理；熟悉 MCP 生态，能独立完成工具服务端封装与 Agent 引擎端到端编排。">
+          </p>
+          <div class="tag-row"><span class="tag">ReAct</span><span class="tag">LangGraph</span><span class="tag">MCP</span><span class="tag">Function Calling</span></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">🔎</div>
+          <h3 data-en="RAG &amp; Knowledge Systems" data-zh="RAG 与知识系统">RAG &amp; Knowledge Systems</h3>
+          <p data-en="Parent-child chunking, vector retrieval &amp; multi-route recall; knowledge-graph entity extraction, relation alignment &amp; data cleaning; GraphRAG; enterprise-grade traceable QA."
+             data-zh="父子文档切块、向量检索与多路召回；知识图谱实体抽取、关系对齐与数据清洗；了解 GraphRAG，具备企业级高精度可溯源问答的架构与落地经验。">
+          </p>
+          <div class="tag-row"><span class="tag">GraphRAG</span><span class="tag">Vector Search</span><span class="tag">Knowledge Graph</span></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">⚖️</div>
+          <h3 data-en="Model Application &amp; Evaluation" data-zh="模型应用与评测">Model Application &amp; Evaluation</h3>
+          <p data-en="Advanced prompting (CoT and beyond); LLM-as-Judge with multi-dimensional Rubrics and trajectory-level evaluation systems."
+             data-zh="熟练掌握 CoT 等进阶提示词技巧；精通 LLM-as-Judge 与多维 Rubric 自动化评分及轨迹评测体系搭建。">
+          </p>
+          <div class="tag-row"><span class="tag">LLM-as-Judge</span><span class="tag">Rubric</span><span class="tag">CoT</span></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3 data-en="Programming &amp; Engineering" data-zh="编程语言与工程">Programming &amp; Engineering</h3>
+          <p data-en="Fluent in Python / SQL; exceptional AI-assisted coding &amp; rapid prototyping — shipping full application loops fast."
+             data-zh="熟练使用 Python / SQL；具备卓越的 AI 辅助编程与快速原型开发能力，能极速跑通应用业务全闭环。">
+          </p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Rapid Prototyping</span></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">🧠</div>
+          <h3 data-en="LLM &amp; Algorithm Foundations" data-zh="大模型与算法基础">LLM &amp; Algorithm Foundations</h3>
+          <p data-en="Familiar with the capability boundaries of GPT / Claude / Gemini / Qwen; solid understanding of Transformer &amp; Attention core mechanisms."
+             data-zh="熟悉 GPT / Claude / Gemini / Qwen 等主流模型能力边界；深入理解 Transformer / Attention 核心机制。">
+          </p>
+          <div class="tag-row"><span class="tag">Transformer</span><span class="tag">Attention</span><span class="tag">GPT · Claude · Gemini · Qwen</span></div>
+        </div>
+        <div class="skill-card glass-card reveal">
+          <div class="skill-icon">🌏</div>
+          <h3 data-en="Cross-domain &amp; Languages" data-zh="跨界与语言">Cross-domain &amp; Languages</h3>
+          <p data-en="Economics (UCL) business judgment + Data Science (NUS) rigor. Working in Chinese (native) and English (UCL degree + MSRA)."
+             data-zh="经济学（UCL）商业视角 + 数据科学（NUS）硬技能。中文（母语）、英文（UCL 本科 + MSRA 工作环境）。">
+          </p>
+          <div class="tag-row"><span class="tag">Economics</span><span class="tag">Data Science</span><span class="tag">中文 · English</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="section section-alt">
+    <div class="section-container contact-container">
+      <div class="reveal">
+        <span class="section-kicker" data-en="Say hi" data-zh="打个招呼">Say hi</span>
+        <h2 class="section-title" data-en="Let's build something" data-zh="一起做点酷东西吧">Let's build something</h2>
+        <p class="contact-lead"
+           data-en="Open to full-time roles in AI Agent / LLM applications, Forward-Deployed / Solutions Engineering, and AI evaluation. Available to start after July 2026. 🚀"
+           data-zh="正在寻找 AI Agent / 大模型应用、解决方案 / FDE、AI 评测方向的全职机会，2026 年 7 月后可入职。🚀">
+          Open to full-time roles in AI Agent / LLM applications, Forward-Deployed / Solutions Engineering, and AI evaluation. Available to start after July 2026. 🚀
+        </p>
+      </div>
+      <div class="contact-buttons reveal">
+        <a href="mailto:e1351368@nus.edu" class="glass-btn contact-btn">
+          <i class="fa-solid fa-envelope"></i> e1351368@nus.edu
+        </a>
+        <a href="https://github.com/kiko-yan" target="_blank" rel="noopener" class="glass-btn contact-btn">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <!-- TODO: replace with your real LinkedIn URL -->
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="glass-btn contact-btn">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>© <span id="year"></span> Kiki · 严钟毓 &nbsp;·&nbsp;
+        <span data-en="Made with 🐰 &amp; ✨" data-zh="用 🐰 与 ✨ 制作">Made with 🐰 &amp; ✨</span>
+      </p>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
